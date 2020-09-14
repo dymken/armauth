@@ -1,0 +1,48 @@
+﻿@page "/login"
+@using AuthTutorial.Blazor.Model 
+@using AuthTutorial.Resource.Blazor.Data
+@inject NavigationManager navigationManager
+@inject AuthenticationStateProvider authProvider
+
+<div class="card col-8">
+    <h3 class="card-header">Login</h3>
+    <div class="card-body">
+        <EditForm Model="@login" OnValidSubmit="HandleValidSubmit">
+            <div class="form-group">
+                <label>Username:</label>
+                <InputText @bind-Value="login.UserName" class="form-control col-6"></InputText>
+            </div>
+            <div class="form-group">
+                <label>Password:</label>
+                <InputText @bind-Value="login.Password" class="form-control col-6" type="password"></InputText>
+            </div>
+            <button class="btn btn-primary col-3">Login</button>
+        </EditForm>
+    </div>
+    <div class="card-footer">@LoginErrorMessage</div>
+</div>
+
+@code {
+    private UserLogin login = new UserLogin();
+    private string LoginErrorMessage = "";
+    private CustomAuthenticationStateProvider AuthProvider { get { return (CustomAuthenticationStateProvider)authProvider; } }
+
+    protected override void OnInitialized()
+    {
+
+    }
+
+    private async void HandleValidSubmit()
+    {
+        var loginResult = await AuthProvider.Login(login);
+
+        if (loginResult.Success)
+        {
+            navigationManager.NavigateTo("/");
+        } else
+        {
+            LoginErrorMessage = loginResult.Message;
+        }
+    }
+
+}

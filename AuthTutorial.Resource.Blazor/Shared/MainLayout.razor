@@ -1,0 +1,68 @@
+﻿@inherits LayoutComponentBase
+@using AuthTutorial.Resource.Blazor.Data
+@inject AuthenticationStateProvider authProvider
+@inject NavigationManager navigationManager
+
+<div class="sidebar">
+    <NavMenu />
+</div>
+
+<div class="main">
+    <div class="top-row px-4">
+        ALLHello, @userName!
+        <AuthorizeView>
+            <Authorized>
+                Hello, @userName!
+                <a href="/" @onclick="(() => Logout())">Logout</a>
+            </Authorized>
+            <NotAuthorized>
+                <a href="login">Login</a>
+                <a href="register">Register</a>
+            </NotAuthorized>
+        </AuthorizeView>
+        <AuthorizeView Roles="admin">
+            <Authorized>
+                <a href="admin">admin</a>
+            </Authorized>
+        </AuthorizeView>
+        <AuthorizeView Roles="user">
+            <Authorized>
+                <a href="user">user</a>
+            </Authorized>
+        </AuthorizeView>
+        <a href="about">About</a>
+    </div>
+
+    <div class="content px-4">
+        @Body
+    </div>
+</div>
+
+@code {
+    [CascadingParameter]
+    Task<AuthenticationState> authenticationStateTask { get; set; }
+
+    public System.Security.Claims.ClaimsPrincipal user;
+    private string userName;
+    protected override async Task OnInitializedAsync()
+    {
+        await UpdateUser();
+    }
+
+    public async Task Logout()
+    {
+        await ((CustomAuthenticationStateProvider)authProvider).MarkUserAsLoggedOut();
+        await UpdateUser();
+        navigationManager.NavigateTo("");
+    }
+
+    private async Task UpdateUser()
+    {
+        var authState = await authenticationStateTask;
+        user = authState.User;
+        if (user.Identity.IsAuthenticated)
+            userName = user.Identity.Name;
+        else
+            userName = "Anonymous";
+    }
+}

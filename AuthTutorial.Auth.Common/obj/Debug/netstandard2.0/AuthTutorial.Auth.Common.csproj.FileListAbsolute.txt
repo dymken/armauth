@@ -1,0 +1,9 @@
+D:\Users\Dmitry\Projects\Study\AuthTutorial\AuthTutorial.Auth.Common\bin\Debug\netstandard2.0\AuthTutorial.Auth.Common.deps.json
+D:\Users\Dmitry\Projects\Study\AuthTutorial\AuthTutorial.Auth.Common\bin\Debug\netstandard2.0\AuthTutorial.Auth.Common.dll
+D:\Users\Dmitry\Projects\Study\AuthTutorial\AuthTutorial.Auth.Common\obj\Debug\netstandard2.0\AuthTutorial.Auth.Common.csprojAssemblyReference.cache
+D:\Users\Dmitry\Projects\Study\AuthTutorial\AuthTutorial.Auth.Common\obj\Debug\netstandard2.0\AuthTutorial.Auth.Common.AssemblyInfoInputs.cache
+D:\Users\Dmitry\Projects\Study\AuthTutorial\AuthTutorial.Auth.Common\obj\Debug\netstandard2.0\AuthTutorial.Auth.Common.AssemblyInfo.cs
+D:\Users\Dmitry\Projects\Study\AuthTutorial\AuthTutorial.Auth.Common\bin\Debug\netstandard2.0\AuthTutorial.Auth.Common.pdb
+D:\Users\Dmitry\Projects\Study\AuthTutorial\AuthTutorial.Auth.Common\obj\Debug\netstandard2.0\AuthTutorial.Auth.Common.dll
+D:\Users\Dmitry\Projects\Study\AuthTutorial\AuthTutorial.Auth.Common\obj\Debug\netstandard2.0\AuthTutorial.Auth.Common.pdb
+D:\Users\Dmitry\Projects\Study\AuthTutorial\AuthTutorial.Auth.Common\obj\Debug\netstandard2.0\AuthTutorial.Auth.Common.csproj.CoreCompileInputs.cache

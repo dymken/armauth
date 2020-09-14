@@ -1,0 +1,37 @@
+﻿{
+   "ContextClassName": "ARMContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": true,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": "Models2",
+   "OutputPath": "Models2",
+   "ProjectRootNamespace": "AuthTutorial.Auth.Api",
+   "Schemas": [
+      {
+         "Name": "Access"
+      }
+   ],
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "HasPrimaryKey": true,
+         "Name": "[Access].[Person]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[Access].[Principal]"
+      }
+   ],
+   "UseDatabaseNames": false,
+   "UseDbContextSplitting": false,
+   "UseFluentApiOnly": false,
+   "UseHandleBars": false,
+   "UseInflector": false,
+   "UseLegacyPluralizer": false,
+   "UseNodaTime": false,
+   "UseSpatial": false,
+   "UseStoredProcedures": false
+}

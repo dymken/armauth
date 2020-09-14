@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "yWUI743iKiVsdWzMDqIi1GxQyCxlX9Yj+oxfhf/UDpFKV1TH1C+iV1clvj5joY4SH5mIrip02z0LXLCX63EiGg==",
+  "success": true,
+  "projectFilePath": "D:\\Users\\Dmitry\\Projects\\Study\\AuthTutorial\\AuthTutorial.Auth.Common\\AuthTutorial.Auth.Common.csproj",
+  "expectedPackageFiles": [
+    "D:\\Users\\Dmitry\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "D:\\Users\\Dmitry\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.7.1\\microsoft.identitymodel.jsonwebtokens.6.7.1.nupkg.sha512",
+    "D:\\Users\\Dmitry\\.nuget\\packages\\microsoft.identitymodel.logging\\6.7.1\\microsoft.identitymodel.logging.6.7.1.nupkg.sha512",
+    "D:\\Users\\Dmitry\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.7.1\\microsoft.identitymodel.tokens.6.7.1.nupkg.sha512",
+    "D:\\Users\\Dmitry\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "D:\\Users\\Dmitry\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "D:\\Users\\Dmitry\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
+    "D:\\Users\\Dmitry\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.7.1\\system.identitymodel.tokens.jwt.6.7.1.nupkg.sha512",
+    "D:\\Users\\Dmitry\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
